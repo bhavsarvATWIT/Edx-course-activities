@@ -7,7 +7,10 @@ int main(void){
     scanf("%d",&max);
     while(temp!=-999){
         scanf("%d",&temp);
-        if(temp>=min && temp<=max){
+        if (temp==-999){
+            break;
+        }
+        else if(temp>=min && temp<=max){
             printf("Nothing to report\n");
         }
         else{
